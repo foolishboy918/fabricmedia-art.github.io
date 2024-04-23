@@ -13,40 +13,53 @@ body {
     
     .map-wrapper {
         z-index: 10;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
     }
     
     .header {
         z-index: 20;
         font-family: 'IBM';
+        left: 2%;
         position: absolute;
         color: rgb(224, 239, 255);
     }
     
     .cities {
         font-family: 'IBM';
+        max-height: 900px;
+        max-width: 1600px;
         position: absolute;
+        aspect-ratio: 16 / 9;
         width: 100%;
-        height: 100%;
+        height: auto;
         color: rgb(0, 0, 0);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
     }
 
     .city.NYC {
         position: absolute;
-        top: 42%;  /* Adjust based on the map to position over NYC */
-        left: 31%; /* Adjust based on the map */
+        top: 43%;  /* Adjust based on the map to position over NYC */
+        left: 29%; /* Adjust based on the map */
     }
 
     .city.YYZ{
         position: absolute;
-        top: 32%;  /* Adjust based on the map to position over NYC */
-        left: 30%; /* Adjust based on the map */
+        top: 36%;  /* Adjust based on the map to position over NYC */
+        left: 29%; /* Adjust based on the map */
     }
     
     
     .map {
         position: absolute;
+        max-height: 900px;
+        max-width: 1600px;
         height: auto;
-        width: 90%;
+        aspect-ratio: 16 / 9;
+        width: 100%;
         margin: 0 auto;
         left: 0;
         right: 0;
