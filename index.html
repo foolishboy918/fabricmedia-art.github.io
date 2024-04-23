@@ -7,30 +7,43 @@
 <body>
     <div class="header">
         <h1>FABRIC MEDIA</h1>
-         Global Art Collection
+        Global Art Collection
     </div>
 
-
-
-    <div class="map-wrapper">
+    <section class="map-wrapper">
         <img class="map" src="./Public/Assets/background.jpg" alt="map"/>
 
-
-        <div class="artists">
-            <!-- NYC Pin -->
-            <div class="pin nyc" onclick="toggleMenu()">
-                <span class="label">NYC</span></div>
-    
-            <!-- MS-DOS Style Menu for NYC artists -->
-            <div id="dosMenu" style="display: none;">
-                <ul>
-                    <li onclick="openLink('http://assets.objkt.media/file/assets-003/QmRFJYa9zdH6zn32Kc5nGA7SKVqJ23xgJ4wrJ9CkXzj8PZ/artifact')">Carla Gannis</li>
-                    <li onclick="openLink('http://assets.objkt.media/file/assets-003/QmQfQQZHXVXAK6soMTZqU1DwmfSiN5tUpYVp8ycyeKgpty/artifact')">Claudia Hart</li>
-                </ul>
+        <article class="cities">
+            <div class="city NYC">
+                <!-- NYC Pin -->
+                <div class="pin nyc" onclick="toggleMenu('dosMenuNYC')">
+                    <span class="label">NYC</span>
+                </div>
+                <!-- MS-DOS Style Menu for NYC artists -->
+                <div id="dosMenuNYC" class="dosMenu" style="display: none;">
+                    <ul>
+                        <li onclick="openLink('http://assets.objkt.media/file/assets-003/QmRFJYa9zdH6zn32Kc5nGA7SKVqJ23xgJ4wrJ9CkXzj8PZ/artifact')">Carla Gannis</li>
+                        <li onclick="openLink('http://assets.objkt.media/file/assets-003/QmQfQQZHXVXAK6soMTZqU1DwmfSiN5tUpYVp8ycyeKgpty/artifact')">Claudia Hart</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
+
+            <div class="city YYZ">
+                <!-- YYZ Pin -->
+                <div class="pin YYZ" onclick="toggleMenu('dosMenuYYZ')">
+                    <span class="label">YYZ</span>
+                </div>
+                <!-- MS-DOS Style Menu for YYZ artists -->
+                <div id="dosMenuYYZ" class="dosMenu" style="display: none;">
+                    <ul>
+                        <li onclick="openLink('http://assets.objkt.media/file/assets-003/QmTWDiKumU7TnmhrA4gNse6mbh751iMPi1A5GAyBrYZaYp/artifact')">Lorna Mills</li>
+                    </ul>
+                </div>
+            </div>
         
-        <script src="./JS/index.js"></script>
+        </article>
+    </section>
+        
+    <script src="./JS/index.js"></script>
 </body>
 </html>

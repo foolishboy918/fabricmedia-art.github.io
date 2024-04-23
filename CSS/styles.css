@@ -1,147 +1,136 @@
 
 body {
-margin: 0;
-    height: 100%; 
-    font-family: 'IBM';
-     background-color: rgb(0, 0, 0);
-}
-
-@font-face {
-    font-family: 'IBM';
-    src: url(../Public/FONTS/IBM.woff);
-}
-
-.map-wrapper {
-    z-index: 10;
-}
-
-.header {
-    z-index: 20;
-    font-family: 'IBM';
-    position: absolute;
-    color: rgb(224, 239, 255);
-}
-
-.artists {
-    font-family: 'IBM';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: rgb(0, 0, 0);
-}
-
-.map {
-    position: absolute;
-    height: auto;
-    width: 90%;
-}
-
-.pin {
-    background:rgb(255, 255, 255);
-    position: absolute;
-    width: 0.7em;
-    height: 0.7em;
-    border-radius: 50%
-}
-
-
-.lorna {
-
-    top: 40%;
-    left: 23%;
-}
-
-.carla {
-
-    top: 45%;
-    left: 26%;
-}
-
-.claudia {
-
-    top: 43%;
-    left: 26%;
-}
-
-
-@keyframes pulse {
-    100% {
-        opacity: 0;
-        transform:
-           translate(-50%, -50%) 
-           scale(2.5);
-    }
-}
-
-
-
-.pin.nyc {
-    background: rgb(255, 255, 255);
-    position: absolute;
-    width: 0.7em;
-    height: 0.7em;
-    border-radius: 50%;
-    top: 20%;  /* Adjust based on the map to position over NYC */
-    left: 30%; /* Adjust based on the map */
-    cursor: pointer;
-    z-index: 25; /* Ensure it is clickable */
-}
-
-.pin::before{
-    background:rgb(134, 133, 133);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation:
-     pulse 1.3s ease-in-out infinite;
-
-}
-
-.pin span{
-    display: inline-block;
-    white-space: nowrap;
-    position: absolute;
-    font-family: 'IBM';
-    width: 100%;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    left: 1.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.9em;
-}
-
-
-#dosMenu {
-    position: absolute;
-    top: 22%; /* Slightly below the pin */
-    left: 30%; /* Aligned with the pin */
-    background: black;
-    color: rgb(0, 247, 255);
-    font-family: 'IBM', monospace;
-    padding: 10px;
-    width: 200px;
-    display: none; /* Hidden initially */
-    z-index: 20;
-}
-
-#dosMenu ul {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-}
+        height: 100%; 
+        font-family: 'IBM';
+         background-color: rgb(0, 0, 0);
+    }
+    
+    @font-face {
+        font-family: 'IBM';
+        src: url(../Public/FONTS/IBM.woff);
+    }
+    
+    .map-wrapper {
+        z-index: 10;
+    }
+    
+    .header {
+        z-index: 20;
+        font-family: 'IBM';
+        position: absolute;
+        color: rgb(224, 239, 255);
+    }
+    
+    .cities {
+        font-family: 'IBM';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: rgb(0, 0, 0);
+    }
 
-#dosMenu li {
-    cursor: pointer;
-    padding: 5px;
-    border: 1px solid rgb(0, 247, 255);
-}
+    .city.NYC {
+        position: absolute;
+        top: 42%;  /* Adjust based on the map to position over NYC */
+        left: 31%; /* Adjust based on the map */
+    }
 
-#dosMenu li:hover {
-    background-color: #333;
-}
+    .city.YYZ{
+        position: absolute;
+        top: 32%;  /* Adjust based on the map to position over NYC */
+        left: 30%; /* Adjust based on the map */
+    }
+    
+    
+    .map {
+        position: absolute;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    
+    @keyframes pulse {
+        100% {
+            opacity: 0;
+            transform:
+               translate(-50%, -50%) 
+               scale(2.5);
+        }
+    }
+    
+    .pin {
+        background:rgb(255, 255, 255);
+        position: absolute;
+        width: 0.7em;
+        height: 0.7em;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 25; /* Ensure it is clickable */
+    }
+    
+    /* .pin.nyc {
+        top: 20%; 
+        left: 30%; 
+    } */
+    
+    .pin::before{
+        background:rgb(134, 133, 133);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation:
+         pulse 1.3s ease-in-out infinite;
+    
+    }
+    
+    .pin span{
+        display: inline-block;
+        white-space: nowrap;
+        position: absolute;
+        font-family: 'IBM';
+        width: 100%;
+        height: 100%;
+        color: rgb(255, 255, 255);
+        left: 1.5em;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.9em;
+    }
+    
+    
+    .dosMenu {
+        position: absolute;
+        top: 15px;
+        background: black;
+        color: rgb(0, 247, 255);
+        font-family: 'IBM', monospace;
+        padding: 10px;
+        width: 200px;
+        display: none; /* Hidden initially */
+        z-index: 20;
+    }
+    
+    .dosMenu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .dosMenu li {
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid rgb(0, 247, 255);
+    }
+    
+    .dosMenu li:hover {
+        background-color: #333;
+    }
