@@ -52,7 +52,6 @@ body {
         left: 29%; /* Adjust based on the map */
     }
     
-    
     .city.MIA {
         position: absolute;
         top: 50%;  /* Position for MIA */
