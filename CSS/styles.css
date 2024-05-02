@@ -53,6 +53,42 @@ body {
     }
     
     
+    .city.MIA {
+        position: absolute;
+        top: 50%;  /* Position for MIA */
+        left: 27%; /* Adjust as needed for MIA's map location */
+    }
+
+    .city.CLQ {
+        position: absolute;
+        top: 54%;  /* Position for CLQ */
+        left: 21%; /* Adjust as needed for CLQ's map location */
+    }
+
+    .city.OSL {
+        position: absolute;
+        top: 30%;  /* Position for OSL */
+        left: 50%; /* Adjust as needed for OSL's map location */
+    }
+
+    .city.RMI {
+        position: absolute;
+        top: 41%;  /* Position for RMI */
+        left: 51%; /* Adjust as needed for RMI's map location */
+    }
+
+    .city.BCN {
+        position: absolute;
+        top: 42%;  /* Position for BCN */
+        left: 47%; /* Adjust as needed for BCN's map location */
+    }
+
+    .city.EUG {
+        position: absolute;
+        top: 38%;  /* Position for EUG */
+        left: 18%; /* Adjust as needed for EUG's map location */
+    }
+    
     .map {
         position: absolute;
         max-height: 900px;
@@ -147,3 +183,48 @@ body {
     .dosMenu li:hover {
         background-color: #333;
     }
+
+@media only screen and (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+        background: red;
+        width: 100%;
+        z-index: 30;
+        position: relative;
+        background-color: black; /* MS-DOS aesthetic */
+        color: rgb(0, 247, 255);
+        padding: 20px;
+        text-align: left;
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Padding and border included in width */
+    }
+
+    .map-wrapper{
+    height: auto;
+    z-index: 30;
+    position: relative;
+    /* height: auto; */
+    width: 100vw;
+    min-height: 220px;
+}
+
+    .mobile-menu ul {
+        list-style-type: none; /* No bullets */
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(0, 247, 255); /* Visual separation */
+    }
+
+    .mobile-menu li a {
+        color: rgb(0, 247, 255);
+        text-decoration: none; /* No underlines */
+    }
+
+    .mobile-menu li ul {
+        padding-left: 20px; /* Indent subitems */
+    }
+    
+}
