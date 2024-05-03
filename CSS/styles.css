@@ -11,6 +11,40 @@ body {
         src: url(../Public/FONTS/IBM.woff);
     }
     
+    .brand {
+        position: relative; /* For positioning the hover box */
+        color: rgb(224, 239, 255);
+    }
+    
+    .brand:hover::after {
+        content: "Fabric Media was born from the vision of true decentralization. Our strategy focuses on acquiring cornerstone art and media pieces as both a means of supporting the artists, and as a platform for sharing real wealth with the public. We hope to show the appeal of art as an equity strategy. Art actually has a lot of economic flexibility, it can forgive a debt, it can collateralize a loan, it can secure an insurance contract. Art creates a cultural wealth that can be shared with the public, but also retains a tangible market value which can be held in trust with private patrons, corporate partners, partners in finance, or as municipal treasure through donation or promised gift. A St. Louis based company, we aim to hold these pieces with the city, and grant wealth toward municipal infrastructure and repair.";
+        font-size: medium;
+        display: block; /* Make the content visible */
+        position: absolute;
+        top: 100%; /* Position the box just below the brand */
+        left: 0;
+        width: 300px; /* Adjust as needed */
+        background: black; /* MS-DOS aesthetic */
+        color: rgb(0, 247, 255); /* Contrast text color */
+        padding: 10px; /* Space inside the box */
+        border: 1px solid rgb(0, 247, 255); /* Outline */
+        z-index: 50; /* Ensure it appears above other content */
+        box-sizing: border-box; /* Include padding in width */
+        overflow: hidden; /* Avoid content overflow */
+        white-space: normal; /* Allow content wrapping */
+        word-wrap: break-word; /* Break long words */
+    }
+
+    .subtitle {
+        font-family: 'IBM';
+        font-size: 1em; /* Appropriate size for secondary text */
+        color: rgb(224, 239, 255); /* Consistent text color */
+        display: block; /* Ensure it is visible */
+        z-index: 50;
+        margin-top: 5px; /* Add space between the header and subtitle */
+    }
+    
+
     .map-wrapper {
         z-index: 10;
         position: relative;
