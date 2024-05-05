@@ -19,3 +19,24 @@ function toggleMenu(menuId) {
 function openLink(url) {
     window.open(url, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Main category toggle, like About and Press, which doesn't require stopping propagation
+    var menuItems = document.querySelectorAll('.menu-item:not(.city-menu-item)');
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            var subMenu = this.querySelector('.sub-menu');
+            subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+
+    // City category toggle under Artists
+    var cityMenuItems = document.querySelectorAll('.city-menu-item');
+    cityMenuItems.forEach(function(city) {
+        city.children[0].addEventListener('click', function(event) {
+            event.stopPropagation(); // Stop the event from bubbling up to parent elements
+            var artistList = city.querySelector('.artist-list');
+            artistList.style.display = artistList.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});

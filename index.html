@@ -114,23 +114,40 @@
         </article>
     </section>
 
-
     <div class="mobile-menu">
         <ul>
-            <li><a href="#" onclick="toggleMenu('dosMenuNYC')">NYC Artists</a>
-                <ul>
-                    <li><a href="http://assets.objkt.media/file/assets-003/QmRFJYa9zdH6zn32Kc5nGA7SKVqJ23xgJ4wrJ9CkXzj8PZ/artifact">Carla Gannis</a></li>
-                    <li><a href="http://assets.objkt.media/file/assets-003/QmQfQQZHXVXAK6soMTZqU1DwmfSiN5tUpYVp8ycyeKgpty/artifact">Claudia Hart</a></li>
+            <li class="menu-item">About
+                <div class="sub-menu" style="display: none;">
+                    <p>Fabric Media was born from the vision of true decentralization. Our strategy focuses on acquiring cornerstone art and media pieces as both a means of supporting the artists, and as a platform for sharing real wealth with the public. A St. Louis based company, we aim to hold these pieces with the city, and grant wealth toward municipal infrastructure repair. For all inquiries contact: <a href="mailto:foolishboy@fabricmedia.art">foolishboy@fabricmedia.art</a>.</p>
+                </div>
+            </li>
+            <li class="menu-item">Artists
+                <ul class="sub-menu city-list" style="display: none;">
+                    <li class="city-menu-item"><a href="#">NYC Artists</a>
+                        <ul class="artist-list" style="display: none;">
+                            <li><a href="http://assets.objkt.media/file/assets-003/QmRFJYa9zdH6zn32Kc5nGA7SKVqJ23xgJ4wrJ9CkXzj8PZ/artifact">Carla Gannis</a></li>
+                            <li><a href="http://assets.objkt.media/file/assets-003/QmQfQQZHXVXAK6soMTZqU1DwmfSiN5tUpYVp8ycyeKgpty/artifact">Claudia Hart</a></li>
+                        </ul>
+                    </li>
+                    <li class="city-menu-item"><a href="#">YYZ Artists</a>
+                        <ul class="artist-list" style="display: none;">
+                            <li><a href="http://assets.objkt.media/file/assets-003/QmTWDiKumU7TnmhrA4gNse6mbh751iMPi1A5GAyBrYZaYp/artifact">Lorna Mills</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
-            <li><a href="#" onclick="toggleMenu('dosMenuYYZ')">YYZ Artists</a>
-                <ul>
-                    <li><a href="http://assets.objkt.media/file/assets-003/QmTWDiKumU7TnmhrA4gNse6mbh751iMPi1A5GAyBrYZaYp/artifact">Lorna Mills</a></li>
-                </ul>
+            <li class="menu-item">Press
+                <div class="sub-menu" style="display: none;">
+                    <ul>
+                        <li><a href="#">Press Release 1</a></li>
+                        <li><a href="#">Press Release 2</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
-    </div> 
-        
+    </div>
+    
+    
     <script src="./JS/index.js"></script>
 </body>
 </html>
