@@ -244,7 +244,6 @@ body {
     
     .mobile-menu li {
         padding: 10px 0;
-        border-bottom: 1px solid rgb(0, 247, 255);
         cursor: pointer;
     }
     
@@ -260,7 +259,7 @@ body {
     
     .sub-menu {
         display: none;
-        padding-left: 20px;  // This ensures it's indented under its parent menu item
+        padding-left: 20px;  
     }
     
     @media only screen and (max-width: 768px) {
@@ -278,5 +277,13 @@ body {
     
         .brand:hover::after {
             display:none;
+        }
+
+        .artist-list {
+            padding-left: 50px;
+        }
+
+        .artist-list li {
+            padding-left: 50px;
         }
     }

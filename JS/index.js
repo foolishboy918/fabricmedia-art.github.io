@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     menuItems.forEach(function(item) {
         item.addEventListener('click', function() {
             var subMenu = this.querySelector('.sub-menu');
-            subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+            if (subMenu) {
+                subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+            }
         });
     });
 
@@ -36,7 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
         city.children[0].addEventListener('click', function(event) {
             event.stopPropagation(); // Stop the event from bubbling up to parent elements
             var artistList = city.querySelector('.artist-list');
-            artistList.style.display = artistList.style.display === 'none' ? 'block' : 'none';
+            if (artistList) {
+                artistList.style.display = artistList.style.display === 'none' ? 'block' : 'none';
+            }
+        });
+    });
+
+    // Prevent any link inside sub-menus from toggling the menu
+    var links = document.querySelectorAll('.artist-list a, .sub-menu a');
+    links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.stopPropagation(); // Stop the link from triggering the menu toggle
         });
     });
 });
