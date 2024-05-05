@@ -130,6 +130,62 @@ body {
         top: 38%;  /* Position for EUG */
         left: 18%; /* Adjust as needed for EUG's map location */
     }
+
+    .city.CZK {
+        z-index: 20;
+        position: absolute;
+        top: 37%;  /* Position for CZK */
+        left: 51%; /* Adjust as needed for CZK's map location */
+    }
+
+    .city.YVR {
+        z-index: 20;
+        position: absolute;
+        top: 35%;  /* Position for YVR */
+        left: 18%; /* Adjust as needed for YVR's map location */
+    }
+
+    .city.LHR {
+        z-index: 20;
+        position: absolute;
+        top: 33%;  /* Position for LHR */
+        left: 47%; /* Adjust as needed for LHR's map location */
+    }
+
+    .city.BRU {
+        z-index: 20;
+        position: absolute;
+        top: 35%;  /* Position for BRU */
+        left: 49%; /* Adjust as needed for BRU's map location */
+    }
+
+    .city.AEP {
+        z-index: 20;
+        position: absolute;
+        top: 83%;  /* Position for AEP */
+        left: 33%; /* Adjust as needed for AEP's map location */
+    }
+
+    .city.CDG {
+        z-index: 20;
+        position: absolute;
+        top: 37%;  /* Position for CDG */
+        left: 48%; /* Adjust as needed for CDG's map location */
+    }
+
+    .city.STL {
+        z-index: 20;
+        position: absolute;
+        top: 43%;  /* Position for STL */
+        left: 25%; /* Adjust as needed for STL's map location */
+    }
+
+    .city.X {
+        z-index: 20;
+        position: absolute;
+        top: 40%;  /* Position for STL */
+        left: 60%; /* Adjust as needed for STL's map location */
+    }
     
     .map {
         z-index: 20;
