@@ -227,10 +227,13 @@ body {
         background-color: #333;
     }
 
+    .mobile-menu {
+        display: none; /* Hidden by default on all screens */
+    }
+
 @media only screen and (max-width: 768px) {
     .mobile-menu {
         display: flex;
-        background: red;
         width: 100%;
         z-index: 30;
         position: relative;
@@ -242,7 +245,20 @@ body {
         box-sizing: border-box; /* Padding and border included in width */
     }
 
+    .header {
+        z-index: 20;
+        font-family: 'IBM';
+        position: relative;
+        color: rgb(224, 239, 255);
+    }
+
+    .brand:hover::after {
+        display: none;
+    }
+
+
     .map-wrapper{
+    display: none;
     height: auto;
     z-index: 30;
     position: relative;
