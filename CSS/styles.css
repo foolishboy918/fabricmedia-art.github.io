@@ -76,54 +76,63 @@ body {
     }
 
     .city.NYC {
+        z-index: 20;
         position: absolute;
         top: 43%;  /* Adjust based on the map to position over NYC */
         left: 29%; /* Adjust based on the map */
     }
 
     .city.YYZ{
+        z-index: 20;
         position: absolute;
         top: 36%;  /* Adjust based on the map to position over NYC */
         left: 29%; /* Adjust based on the map */
     }
     
     .city.MIA {
+        z-index: 20;
         position: absolute;
         top: 50%;  /* Position for MIA */
         left: 27%; /* Adjust as needed for MIA's map location */
     }
 
     .city.CLQ {
+        z-index: 20;
         position: absolute;
         top: 54%;  /* Position for CLQ */
         left: 21%; /* Adjust as needed for CLQ's map location */
     }
 
     .city.OSL {
+        z-index: 20;
         position: absolute;
         top: 30%;  /* Position for OSL */
         left: 50%; /* Adjust as needed for OSL's map location */
     }
 
     .city.RMI {
+        z-index: 20;
         position: absolute;
         top: 41%;  /* Position for RMI */
         left: 51%; /* Adjust as needed for RMI's map location */
     }
 
     .city.BCN {
+        z-index: 20;
         position: absolute;
         top: 42%;  /* Position for BCN */
         left: 47%; /* Adjust as needed for BCN's map location */
     }
 
     .city.EUG {
+        z-index: 20;
         position: absolute;
         top: 38%;  /* Position for EUG */
         left: 18%; /* Adjust as needed for EUG's map location */
     }
     
     .map {
+        z-index: 20;
         position: absolute;
         max-height: 900px;
         max-width: 1600px;
@@ -199,7 +208,7 @@ body {
         padding: 10px;
         width: 200px;
         display: none; /* Hidden initially */
-        z-index: 20;
+        z-index: 50;
     }
     
     .dosMenu ul {
