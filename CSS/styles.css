@@ -104,7 +104,7 @@ body {
     }
 
     .city.OSL {
-        z-index: 20;
+        z-index: 25;
         position: absolute;
         top: 30%;  /* Position for OSL */
         left: 50%; /* Adjust as needed for OSL's map location */
@@ -146,14 +146,14 @@ body {
     }
 
     .city.LHR {
-        z-index: 22;
+        z-index: 24;
         position: absolute;
         top: 33%;  /* Position for LHR */
         left: 47%; /* Adjust as needed for LHR's map location */
     }
 
     .city.BRU {
-        z-index: 20;
+        z-index: 22;
         position: absolute;
         top: 35%;  /* Position for BRU */
         left: 49%; /* Adjust as needed for BRU's map location */
