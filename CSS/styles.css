@@ -146,7 +146,7 @@ body {
     }
 
     .city.LHR {
-        z-index: 20;
+        z-index: 22;
         position: absolute;
         top: 33%;  /* Position for LHR */
         left: 47%; /* Adjust as needed for LHR's map location */
@@ -167,7 +167,7 @@ body {
     }
 
     .city.CDG {
-        z-index: 20;
+        z-index: 21;
         position: absolute;
         top: 37%;  /* Position for CDG */
         left: 48%; /* Adjust as needed for CDG's map location */
