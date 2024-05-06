@@ -139,7 +139,7 @@ body {
     }
 
     .city.YVR {
-        z-index: 20;
+        z-index: 21;
         position: absolute;
         top: 35%;  /* Position for YVR */
         left: 18%; /* Adjust as needed for YVR's map location */
