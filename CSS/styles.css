@@ -45,6 +45,39 @@ body {
         margin-top: 5px; /* Add space between the header and subtitle */
     }
     
+    .typing{
+        height: 5vh;
+        /*This part is important for left*/
+        display: flex;
+        place-items: left;
+      }
+      
+      .typing-demo {
+        color: rgb(224, 239, 255); /* Consistent text color */
+        z-index: 20;
+        width: 15ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'IBM';
+        font-size: 1em;
+        position: absolute;
+        top: 90%;  /* Position for CLQ */
+        left: 10%; /* Adjust as needed for CLQ's map location */
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
 
     .map-wrapper {
         z-index: 10;
